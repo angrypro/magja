@@ -36,7 +36,9 @@ public class OrderFilter implements Serializable {
 			}
 		}
 
+		
 		// output in the required format, a list of maps [property -> [paramMap]]
+		/*
 		List<Map<String, Map<String, String>>> result = 
 				new LinkedList<Map<String,Map<String,String>>>();
 		
@@ -47,8 +49,9 @@ public class OrderFilter implements Serializable {
 			newMap.put(property, propertyMaps.get(property));
 			result.add(newMap);
 		}
+		*/
 		
-		return result;
+		return propertyMaps;
 	}
 
 	/**
